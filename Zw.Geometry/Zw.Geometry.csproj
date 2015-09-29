@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="project.json" />
+    <None Include="Zw.Geometry.nuspec" />
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
