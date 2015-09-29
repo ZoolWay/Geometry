@@ -2,17 +2,35 @@
 
 namespace Zw.Geometry
 {
+    /// <summary>
+    /// Represents an angle.
+    /// </summary>
     public class Angle
     {
         private readonly double angleInRadians;
         private readonly double angleInDegrees;
 
+        /// <summary>
+        /// Indicates if a value is represented in radians or degrees.
+        /// </summary>
         public enum Representation
         {
+            /// <summary>
+            /// Represented in radians (full circle are 2 times Pi).
+            /// </summary>
             Radians,
+
+            /// <summary>
+            /// Represented in degrees (full circle are 360 degrees).
+            /// </summary>
             Degree,
         }
 
+        /// <summary>
+        /// Creates a new angle representation.
+        /// </summary>
+        /// <param name="angle">Numeric value.</param>
+        /// <param name="representation">Representation.</param>
         public Angle(double angle, Representation representation = Representation.Radians)
         {
             switch (representation)
@@ -31,8 +49,14 @@ namespace Zw.Geometry
             this.angleInDegrees = this.angleInRadians * 180 / Math.PI;
         }
 
+        /// <summary>
+        /// Value of the angle represented in radians.
+        /// </summary>
         public double Radians { get { return this.angleInRadians; } }
 
+        /// <summary>
+        /// Value of the angle represented in degrees.
+        /// </summary>
         public double Degrees { get { return this.angleInDegrees; } }
 
         public static Angle operator+ (Angle a, Angle b)
@@ -60,6 +84,10 @@ namespace Zw.Geometry
             return new Angle(radians);
         }
 
+        /// <summary>
+        /// Gives a string representation for debugging/logging.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return String.Format("{0:0.00}°/{1:0.00}r", this.angleInDegrees, this.angleInRadians);

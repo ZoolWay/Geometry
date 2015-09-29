@@ -5,6 +5,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Zw.Geometry.Tests
 {
+    /// <summary>
+    /// Run tests for the Rotation class.
+    /// </summary>
     [TestClass]
     public class RotationTest
     {

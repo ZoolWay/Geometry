@@ -2,11 +2,17 @@
 
 namespace Zw.Geometry
 {
+    /// <summary>
+    /// Represents a point in 2-dimensional geometry (mutable).
+    /// </summary>
     public class Point
     {
 
         private static Point origin;
 
+        /// <summary>
+        /// The coordinate system origin.
+        /// </summary>
         public static Point Origin
         {
             get
@@ -15,16 +21,28 @@ namespace Zw.Geometry
             }
         }
 
+        /// <summary>
+        /// Constructor.
+        /// </summary>
         public Point()
         {
         }
 
+        /// <summary>
+        /// Constructor.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         public Point(double x, double y)
         {
             this.X = x;
             this.Y = y;
         }
 
+        /// <summary>
+        /// Copy constructor.
+        /// </summary>
+        /// <param name="source"></param>
         public Point(Point source)
         {
             this.X = source.X;
@@ -46,8 +64,14 @@ namespace Zw.Geometry
             return new Point(a.X * factor, a.Y * factor);
         }
 
+        /// <summary>
+        /// X coordinate.
+        /// </summary>
         public double X { get; set; }
 
+        /// <summary>
+        /// Y coordinate.
+        /// </summary>
         public double Y { get; set; }
 
         public override bool Equals(object obj)

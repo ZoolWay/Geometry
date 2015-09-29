@@ -3,6 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Zw.Geometry.Tests
 {
+    /// <summary>
+    /// Run tests for the Trigonometry class.
+    /// </summary>
     [TestClass]
     public class TrigonometryTest
     {
