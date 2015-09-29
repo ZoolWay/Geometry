@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Zw.Geometry")]
 [assembly: AssemblyDescription(".NET PCL for some easy geometry / trigeometry operations")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ZoolWay")]
 [assembly: AssemblyProduct("Zw.Geometry")]
 [assembly: AssemblyCopyright("Copyright © ZoolWay / Ricky Blankenaufulland 2015")]
 [assembly: AssemblyTrademark("")]
