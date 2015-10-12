@@ -50,6 +50,16 @@ namespace Zw.Geometry
         }
 
         /// <summary>
+        /// Copy constructor.
+        /// </summary>
+        /// <param name="copyFrom"></param>
+        public Angle(Angle copyFrom)
+        {
+            this.angleInRadians = copyFrom.angleInRadians;
+            this.angleInDegrees = copyFrom.angleInDegrees;
+        }
+
+        /// <summary>
         /// Value of the angle represented in radians.
         /// </summary>
         public double Radians { get { return this.angleInRadians; } }
