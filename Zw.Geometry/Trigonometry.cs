@@ -8,6 +8,25 @@ namespace Zw.Geometry
     public static class Trigonometry
     {
 
+        #region Constants -----------------------------------------------------
+
+        /// <summary>
+        /// Constant value of Pi (maps Math.PI).
+        /// </summary>
+        public const double PI = Math.PI;
+
+        /// <summary>
+        /// Constant value of Pi/2.
+        /// </summary>
+        public const double HALF_PI = PI / 2.0;
+
+        /// <summary>
+        /// Constant value of Pi*1.5.
+        /// </summary>
+        public const double ONEHALF_PI = PI + HALF_PI;
+
+        #endregion
+
         /// <summary>
         /// Calculates the sinus of an angle.
         /// </summary>
