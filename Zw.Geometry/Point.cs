@@ -74,6 +74,28 @@ namespace Zw.Geometry
         /// </summary>
         public double Y { get; set; }
 
+        /// <summary>
+        /// Gives the point at the position when going from this one in direction of a given vector.
+        /// </summary>
+        /// <param name="v"></param>
+        /// <returns></returns>
+        public Point Go(Vector v)
+        {
+            return new Point(this.X + v.X, this.Y + v.Y);
+        }
+
+        /// <summary>
+        /// Gives the point at the position when going from this one in direction of a given vector and the given distance.
+        /// </summary>
+        /// <param name="v"></param>
+        /// <param name="distance"></param>
+        /// <returns></returns>
+        public Point Go(Vector v, double distance)
+        {
+            Vector vDiff = v.Scale(distance);
+            return Go(vDiff);
+        }
+
         public override bool Equals(object obj)
         {
             if (obj == null) return false;

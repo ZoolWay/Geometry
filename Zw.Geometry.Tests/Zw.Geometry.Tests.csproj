@@ -56,6 +56,7 @@
     <Compile Include="RotationTest.cs" />
     <Compile Include="TrigonometryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VectorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Zw.Geometry\Zw.Geometry.csproj">
