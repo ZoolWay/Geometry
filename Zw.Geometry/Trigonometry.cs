@@ -143,5 +143,27 @@ namespace Zw.Geometry
             return circleRadius * angle.Radians;
         }
 
+        /// <summary>
+        /// Calculates the angle enclosed by the radians drawing the given arc length.
+        /// </summary>
+        /// <param name="circleRadius"></param>
+        /// <param name="arcLength"></param>
+        /// <returns></returns>
+        public static Angle GetAngleForArcLength(double circleRadius, double arcLength)
+        {
+            return new Angle(arcLength / circleRadius);
+        }
+
+        /// <summary>
+        /// Return the point in the middle between two given points.
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
+        public static Point GetMiddle(Point p1, Point p2)
+        {
+            return new Point(p1.X + ((p2.X - p1.X) / 2), p1.Y + ((p2.Y - p1.Y) / 2));
+        }
+
     }
 }
