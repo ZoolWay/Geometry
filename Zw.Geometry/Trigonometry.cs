@@ -155,6 +155,21 @@ namespace Zw.Geometry
         }
 
         /// <summary>
+        /// Get the coordinates of a point on an arc.
+        /// </summary>
+        /// <param name="degree">Ancle of the point on the arc in degree (DEG/°)</param>
+        /// <param name="arcRadius">Radius of the circle</param>
+        /// <param name="arcCenter">Center of the circle/arc (used as offset)</param>
+        /// <returns></returns>
+        public static Point GetPointOnArc(Angle angle, float arcRadius, Point arcCenter)
+        {
+            Point p = new Point();
+            p.X = Cos(angle) * arcRadius + arcCenter.X;
+            p.Y = Sin(angle) * arcRadius + arcCenter.Y;
+            return p;
+        }
+
+        /// <summary>
         /// Return the point in the middle between two given points.
         /// </summary>
         /// <param name="p1"></param>
