@@ -25,6 +25,11 @@ namespace Zw.Geometry
         /// </summary>
         public const double ONEHALF_PI = PI + HALF_PI;
 
+        /// <summary>
+        /// Constant value of Pi*2.
+        /// </summary>
+        public const double TWO_PI = Math.PI * 2;
+
         #endregion
 
         /// <summary>
