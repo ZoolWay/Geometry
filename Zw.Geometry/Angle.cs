@@ -26,6 +26,16 @@ namespace Zw.Geometry
             Degree,
         }
 
+        public static Angle CreateFromRadians(double radians)
+        {
+            return new Angle(radians, Representation.Radians);
+        }
+
+        public static Angle CreateFromDegrees(double degrees)
+        {
+            return new Angle(degrees, Representation.Degree);
+        }
+
         /// <summary>
         /// Creates a new angle representation.
         /// </summary>
